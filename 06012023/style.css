@@ -1,0 +1,131 @@
+/* ======================================================================== */ 
+
+ /*                      NOT RELATED TO THE TTUTORIAL                        */
+
+/* ======================================================================== */
+
+*{
+	
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+}
+
+:root {
+  --step--2: clamp(0.69rem, calc(0.58rem + 0.60vw), 1.00rem);
+  --step--1: clamp(0.83rem, calc(0.67rem + 0.81vw), 1.25rem);
+  --step-0: clamp(1.00rem, calc(0.78rem + 1.10vw), 1.56rem);
+  --step-1: clamp(1.20rem, calc(0.91rem + 1.47vw), 1.95rem);
+  --step-2: clamp(1.44rem, calc(1.05rem + 1.95vw), 2.44rem);
+  --step-3: clamp(1.73rem, calc(1.21rem + 2.58vw), 3.05rem);
+  --step-4: clamp(2.07rem, calc(1.39rem + 3.40vw), 3.82rem);
+  --step-5: clamp(2.49rem, calc(1.60rem + 4.45vw), 4.77rem);
+	
+	/* Font style */
+	
+	--ff-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	
+	/* Color style */
+	
+	--color-primary: #0575E6;
+	--color-secondary: #6dd5ed;
+	--color-primary-light:#8dc6ff;
+	--color-primary-dark:#021B79;
+	--color-error:#cc3333;
+	--color-success:#4bb544;
+	--color-link:#606470;
+	--color-text:#5f6769;
+	--color-header-dark:#393e46;
+	--color-background:#f5f9ee;
+	--color-border-sc:#ececec;
+	--color-border-focus:#69c2ff;
+	--color-border:#d3d6db;
+	--bs:#ffa857;
+	--color-percentage:#5f6769;
+	--color-header-light:#9ba6a5;
+	--color-border-focus:#a9d7f6;
+	--color-input-background:#f5f9ee;
+	--gradient: linear-gradient(135deg var(--color-primary), var(--color-secondary));
+	
+	
+}
+
+
+/* ======================================================================== */ 
+
+ /*                      RELATED TO THE TTUTORIAL                        */
+
+/* ======================================================================== */
+
+
+
+
+.container {
+    width: 90%;
+    min-height: 500px;
+    background: #9ba6a5;
+    margin: 50px auto;
+}
+
+.color1 {
+	background-color: coral;
+
+}
+
+.color2 {
+	background-color:#0575E6;
+}
+
+.color3 {
+	background-color:chartreuse;
+}
+
+.color4 {
+	background-color:hotpink;
+}
+
+.row {
+	display: flex;
+	align-content:space-around;
+	flex-wrap: nowrap;
+	height: 700px;
+	background: #5f6769;
+}
+
+.row .item {
+	height: 200px;
+	font-size: var(--step-2);
+	text-align: center;
+	line-height: 200px;
+}
+
+.row .col-1 {
+	width: calc(100% / 12 * 1);
+}
+
+.row .col-2 {
+	width: calc(100% / 12 * 2);
+}
+
+.row .col-3 {
+	width: calc(100% / 12 * 3);
+	align-self: center;
+}
+
